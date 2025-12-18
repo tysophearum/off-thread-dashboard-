@@ -56,7 +56,7 @@ export function AutomateMessages() {
                 <label className="block text-sm font-medium text-neutral-700 mb-2">
                   Active Hours
                 </label>
-                <select className="w-full px-4 py-2 border border-neutral-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-neutral-900 focus:border-transparent">
+                <select className="w-full h-10 px-4 py-6 border border-neutral-300 rounded-2xl focus:outline-none focus:ring-2 focus:ring-neutral-900 focus:border-transparent">
                   <option>24/7</option>
                   <option>Business Hours (9-5)</option>
                   <option>Custom</option>
@@ -85,7 +85,7 @@ export function AutomateMessages() {
             <label className="block text-sm font-medium text-neutral-700 mb-2">
               Connection Filter
             </label>
-            <select className="w-full px-4 py-2 border border-neutral-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-neutral-900 focus:border-transparent">
+            <select className="w-full h-10 px-4 py-2 border border-neutral-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-neutral-900 focus:border-transparent">
               <option>All Connections</option>
               <option>1st Degree Connections</option>
               <option>By Industry</option>

@@ -7,7 +7,7 @@ import { MessageSquare, MessageCircle, Send } from 'lucide-react';
 type NavSection = 'overview' | 'comments' | 'messages';
 
 export default function App() {
-  const [activeSection, setActiveSection] = useState<NavSection>('comments');
+  const [activeSection, setActiveSection] = useState<NavSection>('messages');
 
   const navItems = [
     { id: 'overview' as NavSection, label: 'Overview', icon: MessageSquare },
