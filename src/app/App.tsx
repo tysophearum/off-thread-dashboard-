@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Overview } from './components/Overview';
+import {  SelectAPost } from './components/SelectAPost';
 import { AutomateComments } from './components/AutomateComments';
 import { AutomateMessages } from './components/AutomateMessages';
 import { MessageSquare, MessageCircle, Send } from 'lucide-react';
@@ -7,12 +8,13 @@ import { MessageSquare, MessageCircle, Send } from 'lucide-react';
 type NavSection = 'overview' | 'comments' | 'messages';
 
 export default function App() {
-  const [activeSection, setActiveSection] = useState<NavSection>('messages');
+  const [activeSection, setActiveSection] = useState<NavSection>('selectapost');
 
   const navItems = [
     { id: 'overview' as NavSection, label: 'Overview', icon: MessageSquare },
     { id: 'comments' as NavSection, label: 'Automate Comments', icon: MessageCircle },
     { id: 'messages' as NavSection, label: 'Automate Messages', icon: Send },
+    { id: 'selectapost' as NavSection, label: 'Select a Post', icon: Send },
   ];
 
   return (
@@ -61,6 +63,7 @@ export default function App() {
           {activeSection === 'overview' && <Overview />}
           {activeSection === 'comments' && <AutomateComments />}
           {activeSection === 'messages' && <AutomateMessages />}
+          {activeSection === 'selectapost' && <SelectAPost />}
         </div>
       </main>
     </div>
